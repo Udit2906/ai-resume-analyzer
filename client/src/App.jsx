@@ -27,7 +27,7 @@ function App() {
 
     try {
       // Make sure your backend is running on port 5000!
-      const response = await axios.post('https://ai-resume-api-l0on.onrender.com', formData, {
+      const response = await axios.post('https://ai-resume-api-l0on.onrender.com/api/resume/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
